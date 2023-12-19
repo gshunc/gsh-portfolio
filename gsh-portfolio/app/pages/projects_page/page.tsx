@@ -27,9 +27,8 @@ const projects_page = () => {
           </h2>
         </Link>
       </div>
-
-      <p className="border border-gray-300 bg-gray-200 bg-opacity-20 pb-6 pt-6 ps-5 pe-5 mt-5 backdrop-blur-2xl from-zinc-200 rounded-lg">
-        Project 1 Blah Blah Blah Blah Blah Blah Blah
+      <p className="border border-gray-300 bg-yellow-300 text-black pb-6 pt-6 ps-5 pe-5 mt-5 backdrop-blur-2xl rounded-lg">
+        Work in Progress!
       </p>
     </main>
   );

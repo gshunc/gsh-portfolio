@@ -4,6 +4,7 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const story_page = () => {
   return (
@@ -27,10 +28,10 @@ const story_page = () => {
           </h2>
         </Link>
       </div>
-
-      <p className="border border-gray-300 bg-gray-200 bg-opacity-20 pb-6 pt-6 ps-5 pe-5 mt-5 backdrop-blur-2xl from-zinc-200 rounded-lg">
-        Story
+      <p className="border border-gray-300 bg-yellow-300 text-black pb-6 pt-6 ps-5 pe-5 mt-5 backdrop-blur-2xl rounded-lg">
+        Work in Progress!
       </p>
+      <SpeedInsights />
     </main>
   );
 };
