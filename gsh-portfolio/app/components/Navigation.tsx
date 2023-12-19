@@ -49,7 +49,7 @@ const routes = [
   },
   {
     name: "Email",
-    message: "Email me at gsh@unc.edu",
+    message: "Email me at gsh@unc.edu!",
     href: "mailto:gsh@unc.edu",
     isReferrer: true,
     fa: faEnvelope,
