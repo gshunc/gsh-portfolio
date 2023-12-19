@@ -1,31 +1,12 @@
-import Link from "next/link";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome } from "@fortawesome/free-solid-svg-icons";
 
 const projects_page = () => {
   return (
-    <main className="flex min-h-screen flex-col items-start  p-24">
+    <main className="flex min-h-screen flex-col items-start">
       <div className="flex flex-row justify-between container">
-        <div className="pt-5">These are my projects.</div>
-        <Link
-          href="/"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          rel="noreferrer"
-        >
-          <h2 className={`mb-3 text-lg font-semibold`}>
-            <FontAwesomeIcon
-              icon={faHome}
-              className={"text-lg"}
-            ></FontAwesomeIcon>{" "}
-            Home{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-        </Link>
+        <p className="text-4xl">Projects</p>
       </div>
       <p className="border border-gray-300 bg-yellow-300 text-black pb-6 pt-6 ps-5 pe-5 mt-5 backdrop-blur-2xl rounded-lg">
         Work in Progress!
