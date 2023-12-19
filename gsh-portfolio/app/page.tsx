@@ -18,7 +18,7 @@ export default function Home() {
               className="w-48 border-8 rounded border-zinc-800"
             ></img>
             <div className="font-bold text-5xl ml-3 mt-5 mb-5">
-              Hi, I'm George.
+              Hi, I&apos;m George.
             </div>
             <p className="text-xl ml-3 mt-5 mr-3 mb-5 w-50">
               This Website is a{" "}
