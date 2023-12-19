@@ -3,6 +3,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import { Navigation } from "./components/Navigation";
 import { Logo } from "./components/Logo";
+import Link from "next/link";
 config.autoAddCss = false;
 
 export default function Home() {
