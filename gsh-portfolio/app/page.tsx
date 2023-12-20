@@ -16,15 +16,14 @@ export default function Home() {
           ". Please bear with me as I continue to add features and squash bugs. Thanks. ⚠️"
         }
       </p>
-      <div className="w-48 h-48 border-8 mt-10 rounded border-zinc-500">
-        <Image
-          src="/harris_george_photo.jpeg"
-          alt="Portrait Image of George Harris"
-          height={196}
-          width={196}
-          quality={100}
-        ></Image>
-      </div>
+      <Image
+        src="/harris_george_photo.jpeg"
+        alt="Portrait Image of George Harris"
+        height={196}
+        width={196}
+        quality={100}
+        className="w-48 h-48 border-8 mt-10 rounded border-zinc-500"
+      ></Image>
       <div className="font-bold text-5xl ml-3 mt-10 mb-5">
         Hi, I&apos;m George.
       </div>
@@ -38,27 +37,26 @@ export default function Home() {
         {
           " with a professional passion for tech and social good, embedded intelligent systems, AI research, entrepreneurship, and web development (you might be able to tell!). Personally, I'm interested in "
         }
-        <span className="font-extrabold text-red-500">{"history"}</span>
+        <span className="font-bold text-red-500">{"history"}</span>
         {","}
-        <span className="font-extrabold text-blue-600"> {"politics"}</span>
+        <span className="font-bold text-blue-600"> {"politics"}</span>
         {","}
-        <span className="font-extrabold text-orange-900"> {"cooking"}</span>
+        <span className="font-bold text-orange-900"> {"cooking"}</span>
         {","}
-        <span className="font-extrabold text-sky-300">{" college "}</span>
-        <span className="font-extrabold text-orange-500">{" basketball"}</span>
-        {", the "}
-        <span className="font-extrabold text-red-500">{"4"}</span>
-        <span className="font-extrabold text-amber-400">{"9"}</span>
-        {"ers, "}
-        <span className="font-extrabold text-violet-700"> {"fitness"}</span>
-        {", and"}
-        <span className="font-extrabold text-green-500">
-          {" the environment"}
+        <span className="font-bold text-orange-500">
+          {" college basketball"}
         </span>
+        {","}
+        <span className="font-bold text-violet-700"> {"fitness"}</span>
+        {","}
+        <span className="font-bold text-yellow-300"> {"singing"}</span>
+        {", and"}
+        <span className="font-bold text-green-500">{" the environment"}</span>
         {". Learn more about me on the "}
         <a href="/pages/story_page" className="font-extrabold underline">
-          {"My Story"}
+          {"My Story "}
         </a>
+        <span className="font-bold">-&gt;</span>
         {" page."}
       </p>
       <p className="text-xl ml-3 mt-10 mb-5 w-50">
@@ -66,8 +64,9 @@ export default function Home() {
           "As I briefly outlined above, I'm professionally, but also personally, interested in many aspects of tech. I am at my best when I am a part of or leading a high-functioning team, but I like to get some stuff done on my own as well. You can take a deeper dive into what I'm working on in the "
         }
         <a href="/pages/projects_page" className="font-extrabold underline">
-          {"Projects"}
+          {"Projects "}
         </a>
+        <span className="font-bold">-&gt;</span>
         {" page."}
       </p>
     </div>

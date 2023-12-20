@@ -4,7 +4,7 @@ config.autoAddCss = false;
 
 const projects_page = () => {
   return (
-    <main className="flex min-h-screen flex-col items-start">
+    <main className="flex min-h-screen flex-col items-start mt-10">
       <div className="flex flex-row justify-between container">
         <p className="text-4xl">Projects</p>
       </div>
