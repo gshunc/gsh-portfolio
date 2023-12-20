@@ -24,7 +24,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <main>
           <div className="flex flex-col">
-            <div className="flex flex-row bg-black h-screen">
+            <div className="flex flex-row bg-stone-900 h-screen">
               <Header />
               <div className="flex overflow-y-auto w-5/6 flex-col pt-24">
                 {children}

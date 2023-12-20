@@ -7,7 +7,7 @@ config.autoAddCss = false;
 export default function Home() {
   return (
     <div className="mt-5 scroll-auto mr-20">
-      <p className="text-xl ml-3 mt-0 mr-3 mb-10 w-50">
+      <p className="text-xl text-center ml-3 mt-0 mb-10 w-50">
         {"⚠️ This Website is a "}
         <span className="italic font-bold text-yellow-500">
           {"Work in Progress"}
@@ -22,7 +22,7 @@ export default function Home() {
         height={196}
         width={196}
         quality={100}
-        className="w-48 h-48 border-8 mt-10 rounded border-zinc-500"
+        className="w-48 h-48 border-8 mt-10 rounded border-white"
       ></Image>
       <div className="font-bold text-5xl ml-3 mt-10 mb-5">
         Hi, I&apos;m George.
@@ -48,10 +48,8 @@ export default function Home() {
         </span>
         {","}
         <span className="font-bold text-violet-700"> {"fitness"}</span>
-        {","}
-        <span className="font-bold text-yellow-300"> {"singing"}</span>
         {", and"}
-        <span className="font-bold text-green-500">{" the environment"}</span>
+        <span className="font-bold text-yellow-300"> {"singing"}</span>
         {". Learn more about me on the "}
         <a href="/pages/story_page" className="font-extrabold underline">
           {"My Story "}
@@ -61,7 +59,7 @@ export default function Home() {
       </p>
       <p className="text-xl ml-3 mt-10 mb-5 w-50">
         {
-          "As I briefly outlined above, I'm professionally, but also personally, interested in many aspects of tech. I am at my best when I am a part of or leading a high-functioning team, but I like to get some stuff done on my own as well. You can take a deeper dive into what I'm working on in the "
+          "As I briefly outlined above, I'm professionally, but also personally, interested in many aspects of tech, especially in entrepreneurship and innovation. I am at my best when I am a part of or leading a high-functioning team, but I like to get some stuff done on my own as well. You can take a deeper dive into what initiatives I'm working on in the "
         }
         <a href="/pages/projects_page" className="font-extrabold underline">
           {"Projects "}

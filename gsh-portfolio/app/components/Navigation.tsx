@@ -27,8 +27,8 @@ const routes = [
     fa: faGithub,
   },
   {
-    name: "Projects",
-    message: "Check out my Projects!",
+    name: "Projects and Goals",
+    message: "Check out my Projects and other pursuits!",
     href: "/pages/projects_page",
     isReferrer: false,
     fa: faCode,
@@ -60,7 +60,7 @@ export const Navigation = () => {
   const pathname = usePathname();
 
   return (
-    <div className="border-l-2 flex flex-col content-center overflow-y-auto">
+    <div className="border-l-2 flex flex-col w-1/6 content-center overflow-y-auto bg-black">
       <div className="pl-8 pr-8 mt-12 container grid grid-cols-1 text-left lg:max-w-5xl float-right">
         {routes.map((link) => (
           <Link
