@@ -12,7 +12,7 @@ const story_page = () => {
       <p className="text-2xl underline mt-10">How Things Started</p>
       <p className="mt-5">
         {
-          "I was born October 15th, 2003 in St. Louis, Missouri to two loving parents. I attended King of Kings Preschool, followed by River Bend Elementary, Pierremont Elementary MOSAIC Gifted Academy, and Parkway Central Middle and High School. In High School, I was involved in a number of organizations, serving as Senior Class President and Varsity Swim Captain in High School, as well as Secretary of Coding Colts. As a result of no class rankings, I had the opportunity to give our Graduation Speech, pictured below."
+          "I was born October 15th, 2003 in St. Louis, Missouri to two loving parents. I attended King of Kings Preschool, followed by River Bend Elementary, Pierremont Elementary MOSAIC Gifted Academy, and Parkway Central Middle and High School. In High School, I was involved in a number of organizations, serving as Senior Class President and Varsity Swim Captain, as well as Secretary of Coding Colts. As a result of no class rankings, I had the opportunity to give our Graduation Speech, pictured below."
         }
       </p>
       <div className="self-center flex flex-row justify-evenly w-5/6">

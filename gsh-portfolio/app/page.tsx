@@ -32,7 +32,7 @@ export default function Home() {
         <span className="font-extrabold text-sky-300">
           {"UNC Chapel Hill"}
         </span>{" "}
-        {"(Go Heels! 🐏 🩵), originally from "}
+        {"(Go Heels! 🐏), originally from "}
         <span className="font-extrabold text-red-500">{"St. Louis, MO"}</span>,
         {
           " with a professional passion for tech and social good, embedded intelligent systems, AI research, entrepreneurship, and web development (you might be able to tell!). Personally, I'm interested in "
