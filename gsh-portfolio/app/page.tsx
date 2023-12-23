@@ -1,6 +1,7 @@
 "use client";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
+import { ProfessionalBio } from "./components/homeComponents/ProfessionalBio";
 import Image from "next/image";
 config.autoAddCss = false;
 
@@ -67,6 +68,7 @@ export default function Home() {
         <span className="font-bold">-&gt;</span>
         {" page."}
       </p>
+      <ProfessionalBio />
     </div>
   );
 }
