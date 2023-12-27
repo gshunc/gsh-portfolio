@@ -1,6 +1,7 @@
 // Written by: George Harris. Chesterfield, Missouri, United States of America. 2023.
 
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Navigation } from "./components/Navigation";
@@ -34,6 +35,7 @@ export default function RootLayout({
             <Footer />
           </div>
         </main>
+        <Analytics />
       </body>
     </html>
   );
