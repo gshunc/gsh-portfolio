@@ -7,7 +7,7 @@ config.autoAddCss = false;
 
 const story_page = () => {
   return (
-    <main className="flex min-h-screen flex-col items-start mt-10 mr-20">
+    <main className="flex min-h-screen flex-col items-start mt-5 mr-20">
       <p className="self-center border border-gray-300 bg-yellow-300 bg-opacity-70 text-black text-center p-6 mt-10 backdrop-blur-2xl rounded-lg">
         ⚠️ Work in Progress, check back for more content soon! ⚠️
       </p>
@@ -17,7 +17,7 @@ const story_page = () => {
       <p className="text-2xl underline mt-10">How Things Started</p>
       <p className="mt-5">
         {
-          "I was born October 15th, 2003 in St. Louis, Missouri to two loving parents. I attended King of Kings Preschool, followed by River Bend Elementary, Pierremont Elementary MOSAIC Gifted Academy, and Parkway Central Middle and High School. In High School, I was involved in a number of organizations, serving as Senior Class President and Varsity Swim Captain, as well as Secretary of Coding Colts. As a result of no class rankings, I had the opportunity to give our Graduation Speech, pictured below."
+          "I was born October 15th, 2003 in St. Louis, Missouri to two loving parents. I attended King of Kings Preschool, followed by River Bend Elementary, Pierremont Elementary MOSAIC Gifted Academy, and Parkway Central Middle and High School. In High School, I was involved in a number of organizations, serving as Senior Class President and Varsity Swim Captain, as well as Secretary of Coding Colts. I had the opportunity to give our Graduation Speech, pictured below."
         }
       </p>
       <div className="self-center flex flex-row justify-evenly w-5/6">

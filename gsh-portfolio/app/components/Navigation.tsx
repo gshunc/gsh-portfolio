@@ -60,12 +60,12 @@ export const Navigation = () => {
   const pathname = usePathname();
 
   return (
-    <div className="border-l-2 flex flex-col w-1/6 content-center overflow-y-auto bg-black">
+    <div className="border-l-2 flex flex-col w-72 content-center overflow-y-auto bg-black">
       <div className="pl-8 pr-8 mt-12 container grid grid-cols-1 text-left lg:max-w-5xl float-right">
         {routes.map((link) => (
           <Link
             href={link.href}
-            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+            className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-neutral-700 hover:bg-neutral-800/30"
             target={link.isReferrer ? "_blank" : "_self"}
             rel={link.isReferrer ? "noopener noreferrer" : ""}
             key={link.name}
