@@ -27,14 +27,14 @@ const routes = [
     fa: faGithub,
   },
   {
-    name: "Projects and Goals",
+    name: "Projects",
     message: "Check out my Projects and other pursuits!",
     href: "/pages/projects_page",
     isReferrer: false,
     fa: faCode,
   },
   {
-    name: "My Story",
+    name: "Story",
     message: "Learn what makes me, me!",
     href: "/pages/story_page",
     isReferrer: false,
@@ -60,25 +60,25 @@ export const Navigation = () => {
   const pathname = usePathname();
 
   return (
-    <div className="border-l-2 border-t-2 border-r-2 lg:border-t-0 flex lg:flex-col lg:w-72 lg:content-center lg:overflow-y-auto bg-black">
-      <div className="pl-8 pr-8 lg:mt-12 container lg:grid lg:grid-cols-1 text-left float-right">
+    <div className="flex lg:flex-col lg:content-center pb-2 lg:pb-0 lg:pt-10 rounded-t-lg lg:rounded-none border-l-2 border-t-2 border-r-2 lg:border-t-0 lg:border-r-0 lg:w-72 lg:overflow-y-auto bg-black">
+      <div className="flex flex-row justify-between w-screen lg:space-x-0 mt-5 lg:mt-12 pl-3 pr-3 lg:pl-8 lg:pr-8 lg:container lg:grid lg:grid-cols-1 lg:text-left lg:float-right">
         {routes.map((link) => (
           <Link
             href={link.href}
-            className="group rounded-lg lg:border lg:border-transparent px-5 py-4 transition-colors hover:border-neutral-700 hover:bg-neutral-800/30"
+            className="ml-1 mr-1 lg:ml-0 lg:mr-0 group rounded-lg  lg:border lg:border-transparent lg:px-5 lg:py-4 transition-colors hover:border-neutral-700 hover:bg-neutral-800/30"
             target={link.isReferrer ? "_blank" : "_self"}
             rel={link.isReferrer ? "noopener noreferrer" : ""}
             key={link.name}
           >
-            <h2 className={`mb-3 text-xs lg:text-lg font-semibold`}>
+            <h2
+              className={`text-xs flex flex-col text-center font-semibold lg:text-left lg:text-lg lg:block`}
+            >
               <FontAwesomeIcon icon={link.fa} /> {link.name}{" "}
               <span className="hidden lg:inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
                 -&gt;
               </span>
             </h2>
-            <p
-              className={`hidden lg:block m-0 max-w-[30ch] text-sm opacity-50`}
-            >
+            <p className={`hidden lg:block max-w-[30ch] text-sm opacity-50`}>
               {link.message}
             </p>
           </Link>
@@ -86,11 +86,13 @@ export const Navigation = () => {
         {pathname != "/" && (
           <Link
             href="/"
-            className="lg:mt-8 group rounded-lg lg:border px-5 py-4 transition-colors hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+            className="block lg:mt-8 group rounded-lg lg:border lg:px-5 lg:py-4 transition-colors hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           >
-            <h2 className={`text-xs lg:text-lg font-semibold`}>
+            <h2
+              className={`text-xs flex flex-col lg:block lg:text-lg font-semibold`}
+            >
               <FontAwesomeIcon icon={faHome} /> Home
-              <span className="lg:inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+              <span className="hidden lg:inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
                 -&gt;
               </span>
             </h2>

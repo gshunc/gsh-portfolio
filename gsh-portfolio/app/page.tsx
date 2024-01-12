@@ -6,7 +6,7 @@ config.autoAddCss = false;
 
 export default function Home() {
   return (
-    <div className="mt-5 scroll-auto mr-20">
+    <div className="mt-5 scroll-auto mr-20 pb-5">
       <p className="text-xl text-center ml-3 mt-0 mb-10 w-50">
         {"⚠️ This Website is a "}
         <span className="italic font-bold text-yellow-500">
