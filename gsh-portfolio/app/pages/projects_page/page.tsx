@@ -4,12 +4,13 @@ config.autoAddCss = false;
 
 const projects_page = () => {
   return (
-    <main className="flex min-h-screen flex-col items-start mt-10">
-      <div className="flex flex-row justify-between container">
-        <p className="text-4xl">Projects</p>
-      </div>
-      <p className="border border-gray-300 bg-yellow-300 bg-opacity-70 text-black pb-6 pt-6 ps-5 pe-5 mt-5 backdrop-blur-2xl rounded-lg">
-        ⚠️ Work in Progress, check back soon! ⚠️
+    <main className="flex min-h-screen flex-col ml-5 mr-5 lg:items-start lg:mr-20 lg:ml-0 lg:mt-5">
+      <p className="self-center border border-gray-300 bg-yellow-300 bg-opacity-70 text-black text-center p-6 mb-5 lg:mb-0 lg:mt-10 backdrop-blur-2xl rounded-lg">
+        ⚠️ Work in Progress, check back for more content soon! ⚠️
+      </p>
+
+      <p className="text-2xl lg:text-4xl underline mt-5">
+        Projects and Pursuits
       </p>
     </main>
   );
