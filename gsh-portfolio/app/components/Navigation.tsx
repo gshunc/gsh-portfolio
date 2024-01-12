@@ -72,7 +72,7 @@ export const Navigation = () => {
           >
             <h2 className={`mb-3 text-xs lg:text-lg font-semibold`}>
               <FontAwesomeIcon icon={link.fa} /> {link.name}{" "}
-              <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+              <span className="hidden lg:inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
                 -&gt;
               </span>
             </h2>
@@ -88,7 +88,7 @@ export const Navigation = () => {
             href="/"
             className="lg:mt-8 group rounded-lg lg:border px-5 py-4 transition-colors hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           >
-            <h2 className={`text-xs lg:text-md font-semibold`}>
+            <h2 className={`text-xs lg:text-lg font-semibold`}>
               <FontAwesomeIcon icon={faHome} /> Home
               <span className="lg:inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
                 -&gt;

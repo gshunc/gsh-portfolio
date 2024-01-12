@@ -24,10 +24,8 @@ export default function Home() {
         quality={100}
         className="w-48 h-48 border-8 mt-10 rounded border-white"
       ></Image>
-      <div className="font-bold text-5xl ml-3 mt-10 mb-5">
-        Hi, I&apos;m George.
-      </div>
-      <p className="text-xl ml-3 mt-10 mb-5 w-50">
+      <div className="font-bold text-5xl mt-10 mb-5">Hi, I&apos;m George.</div>
+      <p className="text-xl mt-10 mb-5 w-50">
         {"I'm a Sophomore CS Major at "}
         <span className="font-extrabold text-sky-300">
           {"UNC Chapel Hill"}
@@ -57,7 +55,7 @@ export default function Home() {
         <span className="font-bold">-&gt;</span>
         {" page."}
       </p>
-      <p className="text-xl ml-3 mt-10 mb-5 w-50">
+      <p className="text-xl mt-10 mb-5 w-50">
         {
           "As I briefly outlined above, I'm professionally, but also personally, interested in many aspects of tech, especially in entrepreneurship and innovation. I am at my best when I am a part of or leading a high-functioning team, but I like to get some stuff done on my own as well. You can take a deeper dive into what initiatives I'm working on in the "
         }
