@@ -2,34 +2,31 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import Image from "next/image";
 import Link from "next/link";
+import { Story_Image } from "../../components/story_page_components/Story_Image";
 import { Spotify_IFrame } from "../../components/story_page_components/Spotify_IFrame";
 config.autoAddCss = false;
 
 const story_page = () => {
   return (
-    <main className="flex min-h-screen flex-col items-start mt-5 mr-20">
-      <p className="self-center border border-gray-300 bg-yellow-300 bg-opacity-70 text-black text-center p-6 mt-10 backdrop-blur-2xl rounded-lg">
+    <main className="flex min-h-screen flex-col ml-5 mr-5 lg:items-start lg:mr-20 lg:ml-0 lg:mt-5">
+      <p className="self-center border border-gray-300 bg-yellow-300 bg-opacity-70 text-black text-center p-6 mb-5 lg:mb-0 lg:mt-10 backdrop-blur-2xl rounded-lg">
         ⚠️ Work in Progress, check back for more content soon! ⚠️
       </p>
 
-      <p className="text-4xl">My Story</p>
+      <p className="text-2xl lg:text-4xl underline">My Story</p>
 
-      <p className="text-2xl underline mt-10">How Things Started</p>
+      <p className="text-xl mt-5 lg:text-2xl lg:mt-10">
+        -&gt; How Things Started
+      </p>
       <p className="mt-5">
         {
           "I was born October 15th, 2003 in St. Louis, Missouri to two loving parents. I attended King of Kings Preschool, followed by River Bend Elementary, Pierremont Elementary MOSAIC Gifted Academy, and Parkway Central Middle and High School. In High School, I was involved in a number of organizations, serving as Senior Class President and Varsity Swim Captain, as well as Secretary of Coding Colts. I had the opportunity to give our Graduation Speech, pictured below."
         }
       </p>
-      <div className="self-center flex flex-row justify-evenly w-5/6">
-        <Image
-          src="/graduation_speech.JPG"
-          height={407}
-          width={330}
-          quality={100}
-          alt={"Graduation speech picture"}
-          className="border-8 border-white rounded mt-10"
-        ></Image>
-      </div>
+      <Story_Image
+        src={"/graduation_speech.JPG"}
+        alt={"Graduation speech picture"}
+      />
 
       <p className="text-2xl underline mt-10">My Interests</p>
       <p className="mt-5">
@@ -39,7 +36,7 @@ const story_page = () => {
       </p>
 
       <p className={`text-xl mt-10`}>-&gt; History and Politics</p>
-      <div className="ml-10">
+      <div className="lg:ml-10">
         <p className="mt-5">
           {
             "In applying to college, I almost decided to apply as a Political Science major with the intent to enter into Law School following undergrad. Even as I entered college and began to take courses under my Computer Science major, I contemplated switching my major to Political Science and History and pursuing the same goal. While I was and am extremely passionate for technology and the tools it can unlock in innovation and entrepreneurship, politics and history was such a strong personal passion of mine that it almost drew me away."
@@ -59,7 +56,7 @@ const story_page = () => {
       </div>
 
       <p className="text-xl mt-10">-&gt; Cooking</p>
-      <div className="ml-10">
+      <div className="lg:ml-10">
         <p className="mt-5">
           {
             "My interest in cooking was sparked from years of helping my Mom in the kitchen when she needed another hand, which moved into preparing parts of meals on my own, then cooking steaks, and then starting to make my own full meals. The part of cooking I find most fun and fascinating is the science behind it; how every part of cooking a meal is like its own chemical reaction, with technique and ingredients each playing their part in the formula."
@@ -80,7 +77,7 @@ const story_page = () => {
           <span className="font-bold text-orange-900">-&gt;</span>
           {"."}
         </p>
-        <div className="flex flex-row justify-evenly self-center pr-20">
+        <div className="flex flex-row justify-evenly self-center lg:pr-10">
           <Link
             href="https://www.amazon.com/Salt-Fat-Acid-Heat-Mastering/dp/1476753830"
             target="_blank"
@@ -91,33 +88,29 @@ const story_page = () => {
               height={413}
               width={330}
               alt="Cookbook Cover"
-              className="rounded-lg mt-10"
+              className="rounded-lg mt-10 h-auto w-container"
             ></Image>
           </Link>
         </div>
       </div>
 
       <p className="text-xl mt-10">-&gt; Sports</p>
-      <div className="ml-10">
+      <div className="lg:ml-10">
         <p className="mt-5">
           {
             "Being from St. Louis, sports have been an interest of mine for a long time. Growing up, the Cardinals in Baseball were my main team, with a casual interest in the Blues in hockey. Since coming to college, however, UNC sports have taken over. I'm a huge Tar Heel Basketball and Football fan, attending as many games as I can make it to. I'm also a casual fan of the San Francisco 49ers, since  my parents lived in the Bay Area for about a decade."
           }
         </p>
-        <div className="flex flex-row justify-evenly self-center pr-20">
-          <Image
+        <div className="flex flex-row justify-evenly self-center lg:pr-10">
+          <Story_Image
             src="/deandome.jpg"
-            height={410}
-            width={330}
-            quality={100}
             alt={"Image of the dean dome at UNC"}
-            className="border-8 border-white rounded mt-10"
-          ></Image>
+          ></Story_Image>
         </div>
       </div>
 
       <p className="text-xl mt-10">-&gt; Musical Journey</p>
-      <div className="ml-10 mb-10">
+      <div className="lg:ml-10 mb-10">
         <p className="mt-5">
           {
             "Growing up, music was a steady part of my life. From Classic Rock to the Grateful Dead to Jazz to Bluegrass, music was always playing in our house. But my personal music career began in Elementary School Choir, meeting once a week and singing simple songs. My sister was heavily involved in choir, and as she went into Middle School, she joined choir. I did the same, and continued in choir ever since then."
@@ -154,7 +147,7 @@ const story_page = () => {
       </div>
 
       <p className="text-xl mt-10">-&gt; Fitness</p>
-      <div className="ml-10 mb-10">
+      <div className="lg:ml-10 mb-10">
         <p className="mt-5 pb-20">
           {
             "In my life, I have played a number of sports. Baseball, swimming, water polo, football, and tennis, to name a few. In High School, I was Varsity Swim Captain, specializing in distance freestyle, and helped lead my team to a conference title. Nowadays, I am not a part of any organized athletic teams, but fitness remains a part of my life through regularly going to the gym, eating healthy, and going on hikes and swims in the summer. I am also a member of UNC's Club Golf team as a part of the non-competitive team. Fitness, health, and wellbeing are a big part of my life and are things that I proritize in many of the decisions I make on a daily basis."
@@ -162,7 +155,7 @@ const story_page = () => {
         </p>
       </div>
       <div className="pb-10 self-end w-container">
-        {"Last updated 12/20/23"}
+        {"Last updated 01/11/24"}
       </div>
     </main>
   );
