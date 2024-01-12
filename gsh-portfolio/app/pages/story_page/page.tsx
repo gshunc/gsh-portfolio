@@ -13,7 +13,7 @@ const story_page = () => {
         ⚠️ Work in Progress, check back for more content soon! ⚠️
       </p>
 
-      <p className="text-2xl lg:text-4xl underline">My Story</p>
+      <p className="text-2xl lg:text-4xl underline mt-5">My Story</p>
 
       <p className="text-xl mt-5 lg:text-2xl lg:mt-10">
         -&gt; How Things Started

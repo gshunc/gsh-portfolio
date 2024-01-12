@@ -6,8 +6,8 @@ config.autoAddCss = false;
 
 export default function Home() {
   return (
-    <div className="mt-5 scroll-auto mr-20 pb-5">
-      <p className="text-xl text-center ml-3 mt-0 mb-10 w-50">
+    <div className="ml-5 mr-5 flex flex-col lg:block lg:ml-0 mt-5 scroll-auto lg:mr-20 pb-5">
+      <p className="text-xl text-center lg:ml-3 mb-10 w-50">
         {"⚠️ This Website is a "}
         <span className="italic font-bold text-yellow-500">
           {"Work in Progress"}
@@ -22,10 +22,12 @@ export default function Home() {
         height={196}
         width={196}
         quality={100}
-        className="w-48 h-48 border-8 mt-10 rounded border-white"
+        className="w-48 h-48 border-8 mt-10 rounded border-white self-center lg:self-start"
       ></Image>
-      <div className="font-bold text-5xl mt-10 mb-5">Hi, I&apos;m George.</div>
-      <p className="text-xl mt-10 mb-5 w-50">
+      <div className="self-center lg:self-start font-bold text-5xl mt-10 mb-5">
+        Hi, I&apos;m George.
+      </div>
+      <p className="text-xl text-center lg:text-left mt-10 mb-5 w-50">
         {"I'm a Sophomore CS Major at "}
         <span className="font-extrabold text-sky-300">
           {"UNC Chapel Hill"}
@@ -55,7 +57,7 @@ export default function Home() {
         <span className="font-bold">-&gt;</span>
         {" page."}
       </p>
-      <p className="text-xl mt-10 mb-5 w-50">
+      <p className="text-center lg:text-left text-xl mt-10 mb-5 w-50">
         {
           "As I briefly outlined above, I'm professionally, but also personally, interested in many aspects of tech, especially in entrepreneurship and innovation. I am at my best when I am a part of or leading a high-functioning team, but I like to get some stuff done on my own as well. You can take a deeper dive into what initiatives I'm working on in the "
         }
