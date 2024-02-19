@@ -19,22 +19,22 @@ const projects_page = () => {
           "Hello! This page will serve as a summary of my personal projects and my other personal and professional pursuits at UNC and beyond. First, below, I'll give a short summary of each project, the process that went into making them, and a few images of each for your enjoyment!"
         }
       </p>
-      <div className="flex flex-row ml-5">
-        <div className="min-w-1 max-w-1 min-h-full bg-white mt-12 ml-12 mr-16 flex flex-col items-center">
+      <div className="lg:flex lg:flex-row  ml-0 lg:ml-5">
+        <div className="lg:flex hidden min-w-1 max-w-1 lg:min-h-full bg-white lg:mt-12 ml-12 mr-16 flex flex-col items-center">
           <div className="min-h-1 max-h-2 min-w-24 max-w-24 bg-white"></div>
-          <div className="mt-[3.25rem] min-w-24 min-h-24 max-w-24 max-h-24 rounded-full bg-white text-black flex items-center justify-center font-bold border-4 border-green-500 text-center">
+          <div className="lg:mt-[3.25rem] min-w-24 min-h-24 max-w-24 max-h-24 rounded-full bg-white text-black hidden lg:flex items-center justify-center font-bold border-4 border-green-500 text-center">
             <span>{"Nov 2022"}</span>
           </div>
-          <div className="mt-[59rem] min-w-24 min-h-24 max-w-24 max-h-24 rounded-full bg-white text-black flex items-center justify-center font-bold border-4 border-purple-400 text-center">
+          <div className="lg:mt-[59rem] min-w-24 min-h-24 max-w-24 max-h-24 rounded-full bg-white text-black hidden lg:flex items-center justify-center font-bold border-4 border-purple-400 text-center">
             <span>{"Aug-Dec 2023"}</span>
           </div>
-          <div className="mt-[46.5rem] min-w-24 min-h-24 max-w-24 max-h-24 rounded-full bg-white text-black flex items-center justify-center font-bold border-4 border-sky-300 text-center">
+          <div className="lg:mt-[46.5rem] min-w-24 min-h-24 max-w-24 max-h-24 rounded-full bg-white text-black hidden lg:flex items-center justify-center font-bold border-4 border-sky-300 text-center">
             <span>{"Sept 2023-Present"}</span>
           </div>
-          <div className="min-h-1 max-h-2 min-w-24 max-w-24 bg-white mt-auto"></div>
+          <div className="min-h-1 max-h-2 min-w-24 max-w-24 bg-white lg:mt-auto"></div>
         </div>
-        <div className="flex min-h-screen flex-col ml-5 mr-5 lg:items-start lg:mr-20 lg:ml-0 mt-24">
-          <p className="mt-5 lg:mt-10">
+        <div className="flex lg:min-h-screen flex-col ml-5 mr-5 lg:items-start lg:mr-20 lg:ml-0 lg:mt-24">
+          <p className="mt-10">
             <span className="text-xl lg:text-2xl text-green-500">
               -&gt; RiceSavers
             </span>
@@ -54,7 +54,7 @@ const projects_page = () => {
             href="https://devpost.com/software/rice-savers-through-machine-learning"
             rel={"noopener noreferrer"}
             target="_blank"
-            className="font-bold text-xl self-center underline text-green-500"
+            className="font-bold text-lg self-center underline text-green-500"
           >
             {"Devpost"}-&gt;
           </Link>
@@ -65,7 +65,7 @@ const projects_page = () => {
             height={492}
             className="border-8 border-white rounded mt-10 w-container h-auto"
           ></Image>
-          <p className="mt-5 lg:mt-10">
+          <p className="mt-10">
             <span className="text-xl lg:text-2xl text-purple-400">
               -&gt; Compass Center Chapel Hill
             </span>
@@ -99,7 +99,7 @@ const projects_page = () => {
             height={600}
             className="border-8 border-white rounded mt-10 w-container h-auto"
           ></Image>
-          <p className="mt-5 lg:mt-10">
+          <p className="mt-10">
             <span className="text-xl lg:text-2xl text-sky-300">
               -&gt; georgeharris.tech Personal Portfolio
             </span>
