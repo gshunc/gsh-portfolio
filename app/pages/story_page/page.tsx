@@ -8,15 +8,15 @@ config.autoAddCss = false;
 
 const story_page = () => {
   return (
-    <main className="flex min-h-screen flex-col ml-5 mr-5 lg:items-start lg:mr-20 lg:ml-0 lg:mt-5">
+    <main className="flex min-h-full flex-col ml-5 mr-5 lg:items-start lg:mr-20 lg:ml-0 lg:mt-5">
       <p className="self-center border border-gray-300 bg-yellow-300 bg-opacity-70 text-black text-center p-6 mb-5 lg:mb-0 lg:mt-10 backdrop-blur-2xl rounded-lg">
         ⚠️ Work in Progress, check back for more content soon! ⚠️
       </p>
 
-      <p className="text-2xl lg:text-4xl underline mt-5">My Story</p>
+      <p className="text-2xl lg:text-5xl font-bold underline mt-5">My Story</p>
 
-      <p className="text-xl mt-5 lg:text-2xl lg:mt-10">
-        -&gt; How Things Started
+      <p className="text-xl mt-5 lg:text-3xl underline lg:mt-10">
+        How Things Started
       </p>
       <p className="mt-5">
         {
@@ -28,7 +28,7 @@ const story_page = () => {
         alt={"Graduation speech picture"}
       />
 
-      <p className="text-2xl underline mt-10">My Interests</p>
+      <p className="text-3xl underline mt-10">My Interests</p>
       <p className="mt-5">
         {
           " As listed on the home page, some of my interests include history, politics, cooking, college basketball, singing, fitness, and the environment. I want to talk a little about each, here."

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const Header = () => {
   return (
-    <Link href="/">
+    <Link href="/" className="w-[172px]">
       <Image
         src="/logo-gsh.png"
         alt="Website Icon"

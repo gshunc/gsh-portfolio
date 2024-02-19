@@ -27,7 +27,7 @@ export default function RootLayout({
           <div className="flex flex-col">
             <div className="flex flex-col lg:flex-row bg-stone-900 h-dvh">
               <Header />
-              <div className="flex shrink h-auto overflow-y-auto lg:w-5/6 flex-col lg:pt-24">
+              <div className="flex shrink h-auto overflow-y-auto lg:w-5/6 flex-col">
                 {children}
               </div>
               <Navigation />
