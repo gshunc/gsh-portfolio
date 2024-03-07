@@ -4,15 +4,15 @@
 
 :root {
   --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 0, 0, 0; /* Change to a dark gray value */
-  --background-end-rgb: 0, 0, 0; /* Change to a dark gray value */
+  --background-start-rgb: 28, 25, 23; /* Change to a dark gray value */
+  --background-end-rgb: 28, 25, 23; /* Change to a dark gray value */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0; /* Change to a dark gray value */
-    --background-end-rgb: 0, 0, 0; /* Change to a dark gray value */
+    --background-start-rgb: 28, 25, 23; /* Change to a dark gray value */
+    --background-end-rgb: 28, 25, 23; /* Change to a dark gray value */
   }
 }
 

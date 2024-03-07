@@ -28,7 +28,7 @@ export default function Home() {
         Hi, I&apos;m George.
       </div>
       <p className="text-xl text-center lg:text-left mt-10 mb-5 w-50">
-        {"I'm a Sophomore CS Major at "}
+        {"I'm a Computer Science Major at "}
         <span className="font-extrabold text-sky-300">
           {"UNC Chapel Hill"}
         </span>{" "}
@@ -51,20 +51,28 @@ export default function Home() {
         {", and"}
         <span className="font-bold text-yellow-300"> {"singing"}</span>
         {". Learn more about me on the "}
-        <a href="/pages/story_page" className="font-extrabold underline">
+        <a href="/pages/story_page" className="font-extrabold underline group">
           {"My Story "}
+          <span className="hidden lg:inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+            -&gt;
+          </span>
         </a>
-        <span className="font-bold">-&gt;</span>
         {" page."}
       </p>
       <p className="text-center lg:text-left text-xl mt-10 mb-5 w-50">
         {
           "As I briefly outlined above, I'm professionally, but also personally, interested in many aspects of tech, especially in entrepreneurship and innovation. I am at my best when I am a part of or leading a high-functioning team, but I like to get some stuff done on my own as well. You can take a deeper dive into what initiatives I'm working on in the "
         }
-        <a href="/pages/projects_page" className="font-extrabold underline">
+        <a
+          href="/pages/projects_page"
+          className="font-extrabold underline group"
+        >
           {"Projects "}
+          <span className="hidden lg:inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+            -&gt;
+          </span>
         </a>
-        <span className="font-bold">-&gt;</span>
+
         {" page."}
       </p>
     </div>
