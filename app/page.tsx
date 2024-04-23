@@ -16,17 +16,20 @@ export default function Home() {
           ". Please bear with me as I continue to add features and squash bugs. Thanks. ⚠️"
         }
       </p>
-      <Image
-        src="/harris_george_photo.jpeg"
-        alt="Portrait Image of George Harris"
-        height={196}
-        width={196}
-        quality={100}
-        className="w-48 h-48 border-8 mt-5 lg:mt-10 rounded border-white self-center lg:self-start"
-      ></Image>
-      <div className="self-center lg:self-start font-bold text-5xl mt-10 mb-5">
-        Hi, I&apos;m George.
+      <div className="flex flex-row">
+        <Image
+          src="/harris_george_photo.jpg"
+          alt="Portrait Image of George Harris"
+          height={300}
+          width={300}
+          quality={100}
+          className="w-64 h-64 border-8 mt-5 lg:mt-10 rounded border-white self-center lg:self-start"
+        ></Image>
+        <div className="self-end ml-10 font-bold text-7xl mt-10 mb-5 pb-5">
+          Hi, I&apos;m George.
+        </div>
       </div>
+
       <p className="text-xl text-center lg:text-left mt-10 mb-5 w-50">
         {"I'm a Computer Science Major at "}
         <span className="font-extrabold text-sky-300">
@@ -35,7 +38,7 @@ export default function Home() {
         {"(Go Heels! 🐏), originally from "}
         <span className="font-extrabold text-red-500">{"St. Louis, MO"}</span>,
         {
-          " with a professional passion for tech and social good, embedded intelligent systems, AI research, entrepreneurship, and web development (you might be able to tell!). Personally, I'm interested in "
+          " with a professional passion for tech and social good, AI research, entrepreneurship, and web development (you might be able to tell!). Personally, I'm interested in "
         }
         <span className="font-bold text-red-500">{"history"}</span>
         {","}
@@ -61,7 +64,7 @@ export default function Home() {
       </p>
       <p className="text-center lg:text-left text-xl mt-10 mb-5 w-50">
         {
-          "As I briefly outlined above, I'm professionally, but also personally, interested in many aspects of tech, especially in entrepreneurship and innovation. I am at my best when I am a part of or leading a high-functioning team, but I like to get some stuff done on my own as well. You can take a deeper dive into what initiatives I'm working on in the "
+          "As I briefly outlined above, I'm professionally, but also personally, interested in many aspects of tech, especially in entrepreneurship and innovation. I am at my best when I am a part of or leading a high-functioning team, but I like to get some stuff done on my own as well. You can take a deeper dive into what I'm working on in the "
         }
         <a
           href="/pages/projects_page"
