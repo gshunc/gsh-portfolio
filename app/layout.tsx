@@ -2,13 +2,13 @@
 
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
-import { Inter } from "next/font/google";
+import { GeistSans } from "geist/font/sans";
+
 import "./globals.css";
 import { Navigation } from "./components/Navigation";
-import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const geist = GeistSans;
 
 export const metadata: Metadata = {
   title: "George Harris",
@@ -22,10 +22,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <main>
+      <body className={geist.className}>
+        <main className="">
           <div className="flex flex-col">
-            <div className="flex flex-col lg:flex-row bg-stone-900 h-dvh">
+            <div className="flex flex-col lg:flex-row h-svh">
               <div className="flex shrink h-auto lg:ml-12 overflow-y-auto lg:w-5/6 flex-col">
                 {children}
               </div>

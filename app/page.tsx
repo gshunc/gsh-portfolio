@@ -25,8 +25,8 @@ export default function Home() {
           quality={100}
           className="w-64 h-64 border-8 mt-5 lg:mt-10 rounded border-white self-center lg:self-start"
         ></Image>
-        <div className="self-end ml-10 font-bold text-7xl mt-10 mb-5 pb-5">
-          Hi, I&apos;m George.
+        <div className="self-end ml-10 font-semibold text-6xl mt-10 mb-5 pb-5">
+          Hi, I&apos;m George. <span className="text-sm">(Harris)</span>
         </div>
       </div>
 

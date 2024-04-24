@@ -60,7 +60,7 @@ export const Navigation = () => {
   const pathname = usePathname();
 
   return (
-    <div className="flex lg:flex-col lg:content-center pb-2 lg:pb-0 lg:pt-10 rounded-t-lg lg:rounded-none border-l-2 border-t-2 border-r-2 lg:border-t-0 lg:border-r-0 lg:w-72 lg:overflow-y-auto bg-black">
+    <div className="flex lg:flex-col lg:content-center pb-2 lg:pb-0 lg:pt-10 rounded-t-lg lg:rounded-none border-l-2 border-t-2 border-r-2 lg:border-t-0 lg:border-r-0 lg:w-72 lg:overflow-y-auto bg-gradient-black-gray">
       <div className="flex flex-row justify-between w-screen lg:space-x-0 mt-5 lg:mt-12 pl-3 pr-3 lg:pl-8 lg:pr-8 lg:container lg:grid lg:grid-cols-1 lg:text-left lg:float-right">
         {routes.map((link) => (
           <Link
