@@ -6,16 +6,7 @@ config.autoAddCss = false;
 
 export default function Home() {
   return (
-    <div className="ml-5 mr-5 flex flex-col lg:block lg:ml-0 lg:mt-5 scroll-auto lg:mr-20 pb-5">
-      <p className="text-l lg:text-xl text-center lg:ml-3 lg:mb-10 w-50">
-        {"⚠️ This Website is a "}
-        <span className="italic font-bold text-yellow-500">
-          {"Work in Progress"}
-        </span>
-        {
-          ". Please bear with me as I continue to add features and squash bugs. Thanks. ⚠️"
-        }
-      </p>
+    <div className="ml-5 mr-5 flex flex-col lg:block lg:ml-0 lg:mt-5 scroll-auto lg:mr-20 pb-5 pt-20">
       <div className="flex flex-row">
         <Image
           src="/harris_george_photo.jpg"
@@ -55,7 +46,7 @@ export default function Home() {
         <span className="font-bold text-yellow-300"> {"singing"}</span>
         {". Learn more about me on the "}
         <a href="/pages/story_page" className="font-extrabold underline group">
-          {"My Story "}
+          {"My Story"}
           <span className="hidden lg:inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
             -&gt;
           </span>
@@ -70,7 +61,7 @@ export default function Home() {
           href="/pages/projects_page"
           className="font-extrabold underline group"
         >
-          {"Projects "}
+          {"Projects"}
           <span className="hidden lg:inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
             -&gt;
           </span>

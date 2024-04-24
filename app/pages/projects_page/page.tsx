@@ -8,9 +8,6 @@ const projects_page = () => {
   return (
     <main className="min-h-full">
       <div className="pb-10 pt-10 flex flex-col">
-        <p className="self-center border border-gray-300 bg-yellow-300 bg-opacity-70 text-black text-center p-6 mb-5 lg:mb-0 lg:mt-10 backdrop-blur-2xl rounded-lg">
-          ⚠️ Work in Progress, check back for more content soon! ⚠️
-        </p>
         <p className="text-2xl lg:text-5xl font-semibold underline mt-5">
           Projects and Pursuits
         </p>
@@ -25,9 +22,11 @@ const projects_page = () => {
             </span>
           </p>
           <span className="font-bold ml-8 mt-5 text-sky-300">
-            <a href={"https://ei.cs.unc.edu/"}>
+            <a href={"https://ei.cs.unc.edu/"} className="group">
               <span className="underline">UNC Embedded Intelligence Lab</span>
-              <span> -&gt;</span>
+              <span className="hidden lg:inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+                -&gt;
+              </span>
             </a>
           </span>
           <p className="mt-5">
@@ -103,9 +102,12 @@ const projects_page = () => {
               href="https://devpost.com/software/rice-savers-through-machine-learning"
               rel={"noopener noreferrer"}
               target="_blank"
-              className="font-bold self-center text-green-500"
+              className="font-bold self-center text-green-500 group"
             >
-              <span className="underline">{"Devpost"}</span> -&gt;
+              <span className="underline">{"Devpost"}</span>
+              <span className="hidden lg:inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+                -&gt;
+              </span>
             </Link>
           </p>
 
@@ -130,13 +132,16 @@ const projects_page = () => {
             {
               "at UNC, I was tasked alongside two other members of the fullstack team to design, wireframe, and implement a brand new volunteering interface for the "
             }
-            <span className="font-bold text-purple-400">
+            <span className="font-bold text-purple-400 group">
               <Link
                 href="https://www.compassctr.org/"
                 rel={"noopener noreferrer"}
                 target="_blank"
               >
-                <span className="underline">Compass Center</span> -&gt;
+                <span className="underline">Compass Center</span>
+                <span className="hidden lg:inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+                  -&gt;
+                </span>
               </Link>
             </span>
             {
