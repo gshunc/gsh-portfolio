@@ -14,7 +14,7 @@ export default function Home() {
           height={300}
           width={300}
           quality={100}
-          className="w-64 h-64 border-8 mt-5 lg:mt-10 rounded border-white self-center lg:self-start"
+          className="w-64 h-64 border-8 mt-5 lg:mt-10 rounded border-black self-center lg:self-start"
         ></Image>
         <div className="self-end ml-10 font-semibold text-6xl mt-10 mb-5 pb-5">
           Hi, I&apos;m George. <span className="text-sm">(Harris)</span>
@@ -22,14 +22,14 @@ export default function Home() {
       </div>
 
       <p className="text-xl text-center lg:text-left mt-10 mb-5 w-50">
-        {"I'm a Computer Science Major at "}
+        {"I study computer science, math and statistics at "}
         <span className="font-extrabold text-sky-300">
           {"UNC Chapel Hill"}
         </span>{" "}
-        {"(Go Heels! 🐏), originally from "}
-        <span className="font-extrabold text-red-500">{"St. Louis, MO"}</span>,
+        {"(Go Heels! 🐏), I'm originally from "}
+        <span className="font-extrabold text-red-500">{"St. Louis, MO"}</span>
         {
-          " with a professional passion for tech and social good, AI research, entrepreneurship, and web development (you might be able to tell!). Personally, I'm interested in "
+          ", and have a professional passion for tech and social good, AI research, and entrepreneurship. Outside of that, I'm interested in "
         }
         <span className="font-bold text-red-500">{"history"}</span>
         {","}
@@ -40,7 +40,7 @@ export default function Home() {
         <span className="font-bold text-orange-500">
           {" college basketball"}
         </span>
-        {","}
+        {", "}
         <span className="font-bold text-violet-700"> {"fitness"}</span>
         {", and"}
         <span className="font-bold text-yellow-300"> {"singing"}</span>

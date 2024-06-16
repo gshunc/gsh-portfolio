@@ -2,8 +2,8 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import Image from "next/image";
 import Link from "next/link";
-import { Story_Image } from "../../components/story_page_components/Story_Image";
-import { Spotify_IFrame } from "../../components/story_page_components/Spotify_IFrame";
+import { Story_Image } from "../components/story_page_components/Story_Image";
+import { Spotify_IFrame } from "../components/story_page_components/Spotify_IFrame";
 config.autoAddCss = false;
 
 const story_page = () => {
@@ -81,13 +81,10 @@ const story_page = () => {
             target="_blank"
             rel={"noopener noreferrer"}
           >
-            <Image
+            <Story_Image
               src={`/salt_fat_acid_heat.jpg`}
-              height={413}
-              width={330}
               alt="Cookbook Cover"
-              className="rounded-lg mt-10 h-auto w-container"
-            ></Image>
+            ></Story_Image>
           </Link>
         </div>
       </div>

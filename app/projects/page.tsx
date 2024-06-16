@@ -44,19 +44,19 @@ const projects_page = () => {
             alt="Image of prize ceremony, showing two of our team members on the left side of the screen."
             width={600}
             height={320}
-            className="border-8 border-white rounded mt-2 mb-10 w-container h-auto self-center"
+            className="border-8 border-black rounded mt-2 mb-10 w-container h-auto self-center"
           ></Image>
           <Image
             src="/AURA_analytics_page.png"
             alt="Image of prize ceremony, showing two of our team members on the left side of the screen."
             width={600}
             height={320}
-            className="border-8 border-white rounded mt-2 mb-10 w-container h-auto self-center"
+            className="border-8 border-black rounded mt-2 mb-10 w-container h-auto self-center"
           ></Image>
           <div className="text-3xl font-normal underline mb-5">
             Clubs and Organizations
           </div>
-          <section className="border-2 border-white rounded-xl w-full p-4 mb-5">
+          <section className="border-2 border-black rounded-xl w-full p-4 mb-5">
             <div className="flex flex-row items-end justify-between text-xl lg:text-2xl text-teal-300 w-full">
               <p>-&gt; CS + Social Good</p>
               <p className="text-lg text-white ml-5">
@@ -153,7 +153,7 @@ const projects_page = () => {
             alt="Image of prize ceremony, showing two of our team members on the left side of the screen."
             width={600}
             height={400}
-            className="border-8 border-white rounded mt-10 self-center w-container h-auto"
+            className="border-8 border-black rounded mt-10 self-center w-container h-auto"
           ></Image>
         </div>
       </div>
