@@ -7,7 +7,7 @@ config.autoAddCss = false;
 export default function Home() {
   return (
     <div className="ml-5 mr-5 flex flex-col lg:block lg:ml-0 lg:mt-5 scroll-auto lg:mr-20 pb-5 pt-20">
-      <div className="flex flex-row">
+      <div className="flex lg:flex-row flex-col w-fit">
         <Image
           src="/harris_george_photo.jpg"
           alt="Portrait Image of George Harris"
@@ -16,7 +16,7 @@ export default function Home() {
           quality={100}
           className="w-64 h-64 border-8 mt-5 lg:mt-10 rounded border-black self-center lg:self-start"
         ></Image>
-        <div className="self-end ml-10 font-semibold text-6xl mt-10 mb-5 pb-5">
+        <div className="self-end ml-10 w-fit font-semibold text-6xl mt-10 mb-5 pb-5">
           Hi, I&apos;m George. <span className="text-sm">(Harris)</span>
         </div>
       </div>
