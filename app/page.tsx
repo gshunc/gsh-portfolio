@@ -45,7 +45,7 @@ export default function Home() {
         {", and"}
         <span className="font-bold text-yellow-300"> {"singing"}</span>
         {". Learn more about me on the "}
-        <a href="/pages/story_page" className="font-extrabold underline group">
+        <a href="/my-story" className="font-extrabold underline group">
           {"My Story"}
           <span className="hidden lg:inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
             -&gt;
@@ -57,10 +57,7 @@ export default function Home() {
         {
           "As I briefly outlined above, I'm professionally, but also personally, interested in many aspects of tech, especially in entrepreneurship and innovation. I am at my best when I am a part of or leading a high-functioning team, but I like to get some stuff done on my own as well. You can take a deeper dive into what I'm working on in the "
         }
-        <a
-          href="/pages/projects_page"
-          className="font-extrabold underline group"
-        >
+        <a href="/projects" className="font-extrabold underline group">
           {"Projects"}
           <span className="hidden lg:inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
             -&gt;
