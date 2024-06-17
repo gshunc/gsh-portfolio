@@ -55,7 +55,7 @@ export default function Home() {
       </p>
       <p className="text-center lg:text-left text-xl mt-10 mb-5 w-50">
         {
-          "As I briefly outlined above, I'm professionally, but also personally, interested in many aspects of tech, especially in entrepreneurship and innovation. I am at my best when I am a part of or leading a high-functioning team, but I like to get some stuff done on my own as well. You can take a deeper dive into what I'm working on in the "
+          "As I briefly outlined above, I'm professionally, but also personally, interested in many aspects of tech, especially in entrepreneurship and innovation. I am at my best when I am a part of or leading a high-functioning team, but I also like to build on my own. You can take a deeper dive into what I'm working on in the "
         }
         <a href="/projects" className="font-extrabold underline group">
           {"Projects"}
