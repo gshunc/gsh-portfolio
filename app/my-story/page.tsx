@@ -66,13 +66,15 @@ const story_page = () => {
           }
           <Link
             href="https://www.amazon.com/Salt-Fat-Acid-Heat-Mastering/dp/1476753830"
-            className="font-bold underline text-orange-900"
+            className="font-bold underline text-orange-900 group"
             rel={"noopener noreferrer"}
             target="_blank"
           >
             {" Favorite Cookbook"}
+            <span className="font-bold text-orange-900 hidden lg:inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+              -&gt;
+            </span>
           </Link>
-          <span className="font-bold text-orange-900">-&gt;</span>
           {"."}
         </p>
         <div className="flex flex-row justify-evenly self-center lg:pr-10">
@@ -119,11 +121,14 @@ const story_page = () => {
             href="https://www.wwbw.com/pages/arionaward"
             rel={"noopener noreferrer"}
             target="_blank"
+            className="group"
           >
             <span className="font-bold text-yellow-400 underline">
               {"Arion Award"}
             </span>
-            <span className="font-bold text-yellow-400">-&gt;</span>
+            <span className="font-bold text-yellow-400 hidden lg:inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+              -&gt;
+            </span>
           </Link>
           {
             ', "established in 1948 to give national recognition... for outstanding achievement in band, orchestra or chorus", as well as community and academic achievement. Nowadays, my musical career continues as a part of the '
@@ -132,11 +137,14 @@ const story_page = () => {
             href="https://music.unc.edu/undergraduate/ensembles/choral/carolinachoir/"
             rel={"noopener noreferrer"}
             target="_blank"
-            className="underline font-bold text-sky-300"
+            className="underline font-bold text-sky-300 group"
           >
             Carolina Choir
+            <span className="font-bold text-sky-300 hidden lg:inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+              -&gt;
+            </span>
           </Link>
-          <span className="font-bold text-sky-300">-&gt;</span>
+
           {` at UNC.`}
         </p>
       </div>
