@@ -1,17 +1,70 @@
+"use client";
+import { Story_Image } from "./story_page_components/Story_Image";
+import { state } from "../data/books/books";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
+
+const stateClasses = {
+  finished: "text-green-700",
+  "in-progress": "text-orange-300",
+  "on-deck": "text-red-700",
+};
+
 export default function ReadingDropdown(props: {
   title: String | JSX.Element;
   author: String;
   content: String | JSX.Element;
+  image_src: string;
+  image_alt: string;
+  is_favorite: boolean;
+  book_state: state;
 }) {
-  const { title, author, content } = props;
+  const {
+    title,
+    author,
+    content,
+    image_src,
+    image_alt,
+    is_favorite,
+    book_state,
+  } = props;
+
+  const router = useRouter();
+
+  const [isActive, setActive] = useState(false);
 
   return (
-    <main className="flex flex-col mr-12">
-      <div className="peer w-fit rounded-md text-center content-center select-none border-2 hover:border-black p-1">
-        {title} {"-"} {author}
+    <main className="flex flex-row mt-2">
+      <div className="peer group">
+        <button
+          className={`peer w-96 rounded-md text-center content-center select-none border-2 hover:border-black p-3 mt-2
+          ${is_favorite ? "font-bold" : ""}
+          ${stateClasses[book_state] || ""}`}
+          onClick={() => {
+            setActive(!isActive);
+            router.push("#" + title);
+          }}
+        >
+          {title} {"-"} {author}
+        </button>
+        <div
+          className={`w-96 h-fit p-4 mt-1 ${
+            isActive
+              ? "relative visible opacity-100"
+              : "fixed invisible opacity-0"
+          } transition-opacity ease-in bg-gray-200 border-2 border-black rounded-md font-light text-sm text-center`}
+        >
+          {content}
+        </div>
       </div>
-      <div className="invisible opacity-0 w-96 h-fit p-4 mt-1 fixed peer-hover:relative peer-hover:visible peer-hover:opacity-100 transition-opacity ease-in bg-gray-200 border-2 border-black rounded-md font-light text-sm text-center">
-        {content}
+      <div
+        className={`ml-20 ${
+          isActive
+            ? "relative visible opacity-100"
+            : "invisible opacity-0 fixed"
+        } transition-opacity ease-in`}
+      >
+        <Story_Image src={image_src} alt={image_alt} />
       </div>
     </main>
   );

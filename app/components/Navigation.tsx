@@ -56,6 +56,16 @@ const routes = [
   },
 ];
 
+const miniLinks = [
+  {
+    name: "Reading List",
+    message: "",
+    href: "/reading-list",
+    isReferrer: false,
+    fa: null,
+  },
+];
+
 export const Navigation = () => {
   const pathname = usePathname();
 
@@ -73,7 +83,7 @@ export const Navigation = () => {
             <h2
               className={`text-xs flex flex-col text-center font-semibold lg:text-left lg:text-lg lg:block`}
             >
-              <FontAwesomeIcon icon={link.fa} /> {link.name}{" "}
+              {link.fa && <FontAwesomeIcon icon={link.fa} />} {link.name}{" "}
               <span className="hidden lg:inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
                 -&gt;
               </span>
@@ -86,7 +96,7 @@ export const Navigation = () => {
         {pathname != "/" && (
           <Link
             href="/"
-            className="block lg:mt-8 group rounded-lg lg:border lg:px-5 lg:py-4 transition-colors hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+            className="block group rounded-lg lg:border lg:px-5 lg:py-4 transition-colors hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           >
             <h2
               className={`text-xs flex flex-col lg:block lg:text-lg font-semibold`}
@@ -98,6 +108,30 @@ export const Navigation = () => {
             </h2>
           </Link>
         )}
+      </div>
+      <div className="flex flex-row justify-between w-screen lg:space-x-0 lg:mt-12 pl-3 pr-3 lg:pl-8 lg:pr-8 lg:container lg:grid lg:grid-cols-1 lg:text-left lg:float-right">
+        <p className="font-base font-semibold px-5 underline">Fun Stuff</p>
+        {miniLinks.map((link) => (
+          <Link
+            href={link.href}
+            className="ml-1 mr-1 lg:ml-0 lg:mr-0 group rounded-lg  lg:border lg:border-transparent lg:px-5 lg:py-2 transition-colors hover:border-neutral-700 hover:bg-neutral-800/30"
+            target={link.isReferrer ? "_blank" : "_self"}
+            rel={link.isReferrer ? "noopener noreferrer" : ""}
+            key={link.name}
+          >
+            <h2
+              className={`text-xs flex flex-col text-center font-semibold lg:text-left lg:text-sm lg:block`}
+            >
+              {link.fa && <FontAwesomeIcon icon={link.fa} />} {link.name}{" "}
+              <span className="hidden lg:inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
+                -&gt;
+              </span>
+            </h2>
+            <p className={`hidden lg:block max-w-[30ch] text-sm opacity-50`}>
+              {link.message}
+            </p>
+          </Link>
+        ))}
       </div>
     </div>
   );
