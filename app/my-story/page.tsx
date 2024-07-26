@@ -1,6 +1,5 @@
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
-import Image from "next/image";
 import Link from "next/link";
 import { Story_Image } from "../components/story_page_components/Story_Image";
 import { Spotify_IFrame } from "../components/story_page_components/Spotify_IFrame";
@@ -16,7 +15,7 @@ const story_page = () => {
       <p className="text-xl mt-5 lg:text-3xl underline lg:mt-10">
         How Things Started
       </p>
-      <p className="mt-5">
+      <p className="mt-5 mb-10">
         {
           "I was born October 15th, 2003 in St. Louis, Missouri to two loving parents. I attended King of Kings Preschool, followed by River Bend Elementary, Pierremont Elementary MOSAIC Gifted Academy, and Parkway Central Middle and High School. In High School, I was involved in a number of organizations, serving as Senior Class President and Varsity Swim Captain, as well as Secretary of Coding Colts. I had the opportunity to give our Graduation Speech, pictured below."
         }
@@ -77,7 +76,7 @@ const story_page = () => {
           </Link>
           {"."}
         </p>
-        <div className="flex flex-row justify-evenly self-center lg:pr-10">
+        <div className="flex flex-row justify-evenly self-center lg:pr-10 mt-10">
           <Link
             href="https://www.amazon.com/Salt-Fat-Acid-Heat-Mastering/dp/1476753830"
             target="_blank"
@@ -98,7 +97,7 @@ const story_page = () => {
             "Being from St. Louis, sports have been an interest of mine for a long time. Growing up, the Cardinals in Baseball were my main team, with a casual interest in the Blues in hockey. Since coming to college, however, UNC sports have taken over. I'm a huge Tar Heel Basketball and Football fan, attending as many games as I can make it to. I'm also a casual fan of the San Francisco 49ers, since  my parents lived in the Bay Area for about a decade."
           }
         </p>
-        <div className="flex flex-row justify-evenly self-center lg:pr-10">
+        <div className="flex flex-row justify-evenly self-center lg:pr-10 mt-10">
           <Story_Image
             src="/deandome.jpg"
             alt={"Image of the dean dome at UNC"}

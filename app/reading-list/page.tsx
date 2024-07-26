@@ -2,12 +2,11 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import ReadingDropdown from "../components/ReadingDropdown";
 import { books } from "@/app/data/books/books";
-config.autoAddCss = false;
 
 const ReadingList = () => {
   return (
     <main className="min-h-full scroll-smooth">
-      <div className="pb-10 pt-10 flex flex-col">
+      <div className="pb-80 pt-10 flex flex-col">
         <p className="text-2xl lg:text-5xl font-semibold underline mt-5 mb-10">
           Reading List
         </p>

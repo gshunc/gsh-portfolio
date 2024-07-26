@@ -25,7 +25,11 @@ export default function ReadingDropdown(props: {
           ${is_favorite ? "font-bold" : ""}`}
           onClick={() => {
             setActive(!isActive);
-            router.push("#" + title);
+            if (!isActive) {
+              router.push("#" + title);
+            } else {
+              router.push("");
+            }
           }}
         >
           {title} {"-"} {author}
@@ -41,7 +45,7 @@ export default function ReadingDropdown(props: {
         </div>
       </div>
       <div
-        className={`ml-20 ${
+        className={`ml-20 mt-2 ${
           isActive
             ? "relative visible opacity-100"
             : "invisible opacity-0 fixed"
