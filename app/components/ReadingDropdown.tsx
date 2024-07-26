@@ -1,14 +1,7 @@
 "use client";
 import { Story_Image } from "./story_page_components/Story_Image";
-import { state } from "../data/books/books";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-
-const stateClasses = {
-  finished: "text-green-700",
-  "in-progress": "text-orange-300",
-  "on-deck": "text-red-700",
-};
 
 export default function ReadingDropdown(props: {
   title: String | JSX.Element;
@@ -17,17 +10,8 @@ export default function ReadingDropdown(props: {
   image_src: string;
   image_alt: string;
   is_favorite: boolean;
-  book_state: state;
 }) {
-  const {
-    title,
-    author,
-    content,
-    image_src,
-    image_alt,
-    is_favorite,
-    book_state,
-  } = props;
+  const { title, author, content, image_src, image_alt, is_favorite } = props;
 
   const router = useRouter();
 
@@ -38,8 +22,7 @@ export default function ReadingDropdown(props: {
       <div className="peer group">
         <button
           className={`peer w-96 rounded-md text-center content-center select-none border-2 hover:border-black p-3 mt-2
-          ${is_favorite ? "font-bold" : ""}
-          ${stateClasses[book_state] || ""}`}
+          ${is_favorite ? "font-bold" : ""}`}
           onClick={() => {
             setActive(!isActive);
             router.push("#" + title);

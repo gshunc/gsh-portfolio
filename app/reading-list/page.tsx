@@ -11,20 +11,6 @@ const ReadingList = () => {
         <p className="text-2xl lg:text-5xl font-semibold underline mt-5 mb-10">
           Reading List
         </p>
-        <section className="border-2 border-black rounded-xl w-fit p-4 mb-5">
-          <div className="flex flex-row items-end justify-between text-md lg:text-md text-green-700 w-full">
-            <p>-&gt; Complete</p>
-          </div>
-          <div className="flex flex-row items-end justify-between text-md lg:text-md text-orange-300 w-full">
-            <p>-&gt; In Progress</p>
-          </div>
-          <div className="flex flex-row items-end justify-between text-md lg:text-md text-red-700 w-full">
-            <p>-&gt; On Deck</p>
-          </div>
-          <div className="flex flex-row items-end justify-between text-md lg:text-md font-extrabold w-full">
-            <p>-&gt; Particularly Impactful</p>
-          </div>
-        </section>
         <section className="scroll-smooth overflow-auto">
           {books.map((book) => {
             return (
@@ -43,7 +29,6 @@ const ReadingList = () => {
                   image_src={book.image_src}
                   image_alt={book.image_alt}
                   is_favorite={book.is_favorite}
-                  book_state={book.state}
                 />
               </a>
             );

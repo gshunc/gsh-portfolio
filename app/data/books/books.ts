@@ -6,10 +6,7 @@ interface Book {
   image_src: string;
   image_alt: string;
   is_favorite: boolean;
-  state: state;
 }
-
-export type state = "finished" | "in-progress" | "on-deck";
 
 export const books: Array<Book> = [
   // Finished books (unchanged)
@@ -21,7 +18,6 @@ export const books: Array<Book> = [
     image_src: "/books/meditations.jpg",
     image_alt: "Meditations Cover",
     is_favorite: false,
-    state: "finished",
   },
   {
     title: "Systems of Survival",
@@ -31,7 +27,6 @@ export const books: Array<Book> = [
     image_src: "/books/systems_of_survival.jpg",
     image_alt: "Systems of Survival Cover",
     is_favorite: true,
-    state: "finished",
   },
   {
     title: "Commentaries on the Gallic and Civil Wars",
@@ -41,7 +36,6 @@ export const books: Array<Book> = [
     image_src: "/books/caesar_commentaries.jpg",
     image_alt: "Commentaries on the Gallic and Civil Wars Cover",
     is_favorite: false,
-    state: "finished",
   },
 
   {
@@ -52,7 +46,6 @@ export const books: Array<Book> = [
     image_src: "/books/hamilton_philosophy.jpg",
     image_alt: "The Political Philosophy of Alexander Hamilton Cover",
     is_favorite: false,
-    state: "in-progress",
   },
 
   {
@@ -63,7 +56,6 @@ export const books: Array<Book> = [
     image_src: "/books/republic.jpg",
     image_alt: "Republic Cover",
     is_favorite: false,
-    state: "on-deck",
   },
   {
     title: "The Prince",
@@ -73,6 +65,5 @@ export const books: Array<Book> = [
     image_src: "/books/the_prince.jpg",
     image_alt: "The Prince Cover",
     is_favorite: false,
-    state: "on-deck",
   },
 ];
