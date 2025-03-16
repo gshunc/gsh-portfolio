@@ -33,10 +33,7 @@ export default function Home() {
         }
         <span className="font-bold text-red-500">{"history"}</span>
         {","}
-        <span className="font-bold text-blue-600">
-          {" "}
-          {"philosophy and history"}
-        </span>
+        <span className="font-bold text-blue-600"> {"philosophy"}</span>
         {","}
         <span className="font-bold text-orange-900"> {"cooking"}</span>
         {","}
